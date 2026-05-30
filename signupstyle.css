@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background: #000; 
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #7d017d, #000); 
+}
+
+
+.login-container, .signup-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    color: #fff;
+    font-size: 1rem;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #7d017d;
+}
+
+/* دکمه ارسال */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #7d017d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #7d017d;
+}
+
+
+p {
+    color: #fff;
+    margin-top: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #7d017d;
+}
+
+/* صفحه موفقیت */
+.success-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.success-container h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.home-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #7d017d;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    background-color: #7d017d;
+}
+
+@media (max-width: 768px) {
+    .login-container, .signup-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .input-group input {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+    }
+}
